@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+</head>
+<style>
+#blankfeild{ border: 2px black solid; height: 30px; border-radius: 15px;}
+ #main{ background-color: rgb(17, 150, 160); border: 2px black solid; padding: 10px; justify-items: center; margin-left: 570px; margin-right: 570px; margin-top: 100px; border-radius: 20px;}
+.btn{ width: 40px; height: 30px; background-color: rgb(255, 255, 255); font-weight: bolder;}
+#clear{ width: 85px;}
+#e{ width: 85px;}
+
+
+
+</style>
+<body>
+<div id="main"><form name="form">
+<input type="text" name="n" id="blankfeild"><br><br>
+<input type="button" value="9" class="btn" onclick="form.n.value += '9'">
+<input type="button" value="8" class="btn" onclick="form.n.value += '8'">
+<input type="button" value="7" class="btn" onclick="form.n.value += '7'">
+<input type="button" value="6" class="btn" onclick="form.n.value += '6'">
+<br><br>
+<input type="button" value="5" class="btn" onclick="form.n.value += '5'">
+<input type="button" value="4" class="btn" onclick="form.n.value += '4'">
+<input type="button" value="3" class="btn" onclick="form.n.value += '3'">
+<input type="button" value="2" class="btn" onclick="form.n.value += '2'">
+<br><br>    
+<input type="button" value="1" class="btn" onclick="form.n.value += '1'">
+<input type="button" value="0" class="btn" onclick="form.n.value += '0'">
+<input type="button" value="." class="btn" onclick="form.n.value += '.'">
+<input type="button" value="%" class="btn" onclick="form.n.value += '%'">
+<br><br>
+<input type="button" value="+" class="btn" onclick="form.n.value += '+'">
+<input type="button" value="-" class="btn" onclick="form.n.value += '-'">
+<input type="button" value="*" class="btn" onclick="form.n.value += '*'">
+<input type="button" value="/" class="btn" onclick="form.n.value += '/'">
+<br><br>
+<input type="button" value="clear" class="btn" id="clear" onclick="form.n.value = ''">
+<input type="button" value="=" class="btn"  id="e"  onclick="form.n.value = eval(form.n.value)">
+
+
+
+</form></div>    
+</body>
+</html>
